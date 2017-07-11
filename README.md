@@ -19,12 +19,12 @@
 id     |    id   | object|  是 　　|系统自动填写|　　 |  
 手机或者邮箱|uid   |String |  是　　 |   无　　　|
 密码    |password |String|  是　　　|   无　　　|
-昵称    | nick   | Sting |  是　　　|   无名　　| 
-个性签名 | 
-我的回答
-我的提问
-我的评论
-我关注的问题
+昵称    | nick   | Sting |  否　　　|   "无名"　　| 
+个性签名 |signature|String| 否      |  "这个用户很懒，什么也没有留下！"
+我的回答 |myanswer|String| 　　　　　|         |
+我的提问 |myquestion|String|       |         |
+我的评论 |mycomment|String |        |        |
+我关注的问题|issuesq|array|          |[]      |数组中存放问题的id
 关注的标签
 关注我的人与人数
 我关注的人与人数
