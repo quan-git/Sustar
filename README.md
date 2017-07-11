@@ -79,11 +79,11 @@ id　　　|  id   | object|  是　|        |
 
 中文名字 | 英文名字 | type | 是否必填 | defaults | 备注
 -------|------ |----|-------|--------|---
-id
-标签名
-标签所数的类
-关注该标签的人数
-标签的描述
+id　| 
+标签名| tag|  String|  是 |     |
+标签所数的类|class| Array| 是　| [ ] | 存放所属的类
+关注该标签的人数| issuesnum| Number| [ ] | 
+标签的描述| describe|String| 是| "" | 对该标签进行简单的介绍
 
 ****
 
@@ -91,11 +91,11 @@ id
 
 中文名字 | 英文名字 | type | 是否必填 | defaults | 备注
 -------|------ |----|-------|--------|---
-id
-评论本身内容
-评论者
-评论的时间
-评论获得的赞数
+id　
+评论本身内容|comment|String| 是|   |
+评论者|commentperson|String|是| "id"|存放评论者的id
+评论的时间|commentdate|Date|是|  |在评论时获取
+评论获得的赞数|praise|Number|是| 0|被点赞加一
 
 ****
 
