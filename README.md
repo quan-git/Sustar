@@ -30,24 +30,24 @@ id     |    id   | object|  是 　　|系统自动填写|　　 |  
 我关注的人与人数|myfocusperson|Array|    |[ ]     |数组中存放我关注的人的id
 声望|prestige| Number      |      |    0    |问题与回答被赞或者采纳加声望
 活跃度|liveness|Number    |       |     0   |每次登录与提问与回答问题加活跃度
-主页浏次数
-注册时间
-最近登录时间
-出生日期
-性别
-email
-地址
-个人介绍
+主页浏次数|homeview|Number|        |  0   |每次被人打开增加一次
+注册时间|registertime|DateObject|    |      |注册时获取
+最近登录时间|Latestlogontime｜Date|   |       |每次登录时获取覆盖
+出生日期|birthday|Date|          |          | 
+性别|sex|String|        | "不明生物"|
+email|email|String|     |          | 如果该用户是邮箱注册的可获取其邮箱
+地址|address|String|      |"中国"|
+个人介绍|personintroduce|String|     |"这个很懒，什么页没有留下！"|
 
 ****
  **问题**
 
 中文名字 | 英文名字 | type | 是否必填 | defaults | 备注
 -------|------ |----|-------|--------|---
-id
-问题的标题
-问题的内容
-提问者的id
+id　　　| id | object | 是 |        |
+问题的标题| title | String | 是 |  |
+问题的内容|questioncontent|String| 是　|   |   
+提问者的id|personid| String| 是　|    | 
 关注该问题的人数与id
 每个回答的id
 问题的状态（暂无回答、有回答但未解决、问题已解决）
