@@ -12,4 +12,4 @@
 
 * 现在我们进行一些更改操作
 
-* `git commit -a -m '修改了....'` `git push remote develop`
+* `git commit -a -m '修改了....'` `git push branch develop`
