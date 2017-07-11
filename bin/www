@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 #!/usr/bin/env node
 
 /**
@@ -88,3 +90,19 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+=======
+=======
+>>>>>>> f7b0e8e2a00bdea6f309add7b07888569cd80b0c
+#!/usr/bin/nodejs
+var debug = require('debug')('my-application');
+var app = require('../app');
+
+app.set('port', process.env.PORT || 3000);
+
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});
+<<<<<<< HEAD
+>>>>>>> add express
+=======
+>>>>>>> f7b0e8e2a00bdea6f309add7b07888569cd80b0c
