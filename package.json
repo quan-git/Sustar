@@ -1,0 +1,21 @@
+{
+  "name": "Sustar",
+  "version": "0.0.0",
+  "description": "This is a project named Sustar ,which can quiz and answer with reward.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node ./bin/www",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsiaoshen/Sustar.git"
+  },
+  "keywords": ["Sustar"],
+  "author": "兰丰浩,余宏图,申永哲,孙权,刘霜,吴东朔",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hsiaoshen/Sustar/issues"
+  },
+  "homepage": "https://github.com/hsiaoshen/Sustar#readme"
+}
