@@ -1,7 +1,7 @@
 # sustar 知识问答系统
-***
-##　网站搭建
 
+##　网站搭建
+***
 * 客户端: 结构Bootstrap(>=3.3.0 非alpha版本) 效果jQuery(>=3.0) 交互Ajax,socket(>=1.7.0)
 * 服务器端: Node.js(express框架) mongoose
 * 数据库: mongodb
