@@ -26,13 +26,13 @@ id     |    id   | object|  是 　　|系统自动填写|　　 |  
 我的评论 |mycomment|String |        |        |
 我关注的问题|issuesq|Array|          |[　]     |数组中存放问题的id
 关注的标签|issuestag|Array|          |[ ]     |数组中存放标签的id
-关注我的人与人数|focusmeperson|Array|   |[ ]     |数组中存放关注我的人的id
-我关注的人与人数|myfocusperson|Array|    |[ ]     |数组中存放我关注的人的id
+关注我的人与人数|focusmeperson|Array|   |[ ]     |数组中存放关注我的人的id，人数长度获取
+我关注的人与人数|myfocusperson|Array|    |[ ]     |数组中存放我关注的人的id，人数长度获取
 声望|prestige| Number      |      |    0    |问题与回答被赞或者采纳加声望
 活跃度|liveness|Number    |       |     0   |每次登录与提问与回答问题加活跃度
 主页浏次数|homeview|Number|        |  0   |每次被人打开增加一次
 注册时间|registertime|DateObject|    |      |注册时获取
-最近登录时间|Latestlogontime｜Date|   |       |每次登录时获取覆盖
+最近登录时间|Latestlogontime|Date|   |       |每次登录时获取覆盖
 出生日期|birthday|Date|          |          | 
 性别|sex|String|        | "不明生物"|
 email|email|String|     |          | 如果该用户是邮箱注册的可获取其邮箱
@@ -48,9 +48,9 @@ id　　　| id | object | 是 |        |
 问题的标题| title | String | 是 |  |
 问题的内容|questioncontent|String| 是　|   |   
 提问者的id|personid| String| 是　|    | 
-关注该问题的人数与id
-每个回答的id
-问题的状态（暂无回答、有回答但未解决、问题已解决）
+关注该问题的人数与id|focusperson|array| 　| [ ]  |讲提问者与回答者与评论者加入其中,人数通过长度获取
+每个回答的id|answerid|array|  | [ ]|
+问题的状态（暂无回答、有回答但未解决、问题已解决）|state|String| 是　|　noanswer| 用三个字符串表示，noanswer,answerforming，resolved
 问题所属的标签
 问题的浏览次数
 提问的时间
@@ -129,7 +129,7 @@ id
 
 >* 话题（如：html的相关问题）
 
-显示标签介绍、属于该标签的问题，并可选择按时间、赞数、未回答（时间）、未解决包括未回答（时间）排序
+显示标签介绍、属于该标签的问题，并可选择按时间、赞数、未回答（时间）、未解决（时间，包括了未回答）排序
 
 >* 回答页
 
