@@ -1,19 +1,27 @@
 var express = require('express');
 var path = require('path');
 <<<<<<< HEAD
+<<<<<<< HEAD
 var favicon = require('serve-favicon');
 =======
 var favicon = require('static-favicon');
 >>>>>>> add express
+=======
+var favicon = require('static-favicon');
+>>>>>>> f7b0e8e2a00bdea6f309add7b07888569cd80b0c
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var index = require('./routes/index');
 =======
 var routes = require('./routes/index');
 >>>>>>> add express
+=======
+var routes = require('./routes/index');
+>>>>>>> f7b0e8e2a00bdea6f309add7b07888569cd80b0c
 var users = require('./routes/users');
 
 var app = express();
@@ -22,6 +30,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -53,6 +62,8 @@ app.use(function(err, req, res, next) {
 });
 
 =======
+=======
+>>>>>>> f7b0e8e2a00bdea6f309add7b07888569cd80b0c
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -95,5 +106,8 @@ app.use(function(err, req, res, next) {
 });
 
 
+<<<<<<< HEAD
 >>>>>>> add express
+=======
+>>>>>>> f7b0e8e2a00bdea6f309add7b07888569cd80b0c
 module.exports = app;
