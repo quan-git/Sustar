@@ -48,15 +48,15 @@ id　　　| id | object | 是 |        |
 问题的标题| title | String | 是 |  |
 问题的内容|questioncontent|String| 是　|   |   
 提问者的id|personid| String| 是　|    | 
-关注该问题的人数与id|focusperson|array| 　| [ ]  |讲提问者与回答者与评论者加入其中,人数通过长度获取
-每个回答的id|answerid|array|  | [ ]|
-问题的状态（暂无回答、有回答但未解决、问题已解决）|state|String| 是　|　noanswer| 用三个字符串表示，noanswer,answerforming，resolved
-问题所属的标签
-问题的浏览次数
-提问的时间
-问题获得的赞数
-问题的代码
-最后更新时间
+关注该问题的人数与id|focusperson|Array| 　| [ ]  |讲提问者与回答者与评论者加入其中,人数通过长度获取
+每个回答的id|answerid|Array|  | [ ]|
+问题的状态（暂无回答、有回答但未解决、问题已解决）|state|String| 是　|noanswer| 用三个字符串表示，noanswer,answerforming，resolved
+问题所属的标签|tag|Array|   | [] | 存放标签的id
+问题的浏览次数|questionview|Number|    | 0 | 
+提问的时间|questiondate|Date|   |      |提交问题时获取
+问题获得的赞数|praise|Number|   |  0  |
+问题的代码|code|--------------------------
+最后更新时间|lastdate|Date|    |     |有人回答或者评论时获取覆盖
 
 ****
 
@@ -64,14 +64,14 @@ id　　　| id | object | 是 |        |
 
 中文名字 | 英文名字 | type | 是否必填 | defaults | 备注
 -------|------ |----|-------|--------|---
-id
-回答的内容
-回答者的id
-问题的id
-回答的评论数与评论的id
-回答的时间
-回答获得的赞数
-是否被采纳
+id　　　|  id   | object|  是　|        |     
+回答的内容|answer| String|  是|      |    
+回答者的id|answerid|String| 是|      |
+问题的id|questionid|String|是|       |
+回答的评论数与评论的id|commentid|Array|  |[ ]|存放评论的id，数量通过长度获取
+回答的时间|answerdate|Dare|    |      |在回答时获取
+回答获得的赞数|praise|Number|   | 0  |
+是否被采纳|adopt|Booler|     |  false   |
 
 ****
 
@@ -133,7 +133,7 @@ id
 
 >* 回答页
 
-显示问题标题、问题所属的标签、提问时间、最后更新时间、问题的内容（可评论）、已有回答（时间）（可评论）、回答框
+显示问题标题、问题所属的标签、提问时间、最后更新时间、问题的内容（可评论）、已有回答（时间）（可评论）、回答框、问题发起者的采纳按钮
 
 >* 付费信息
 
