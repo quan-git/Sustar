@@ -1,21 +1,17 @@
 {
-  "name": "Sustar",
-  "version": "0.0.0",
-  "description": "This is a project named Sustar ,which can quiz and answer with reward.",
-  "main": "index.js",
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node ./bin/www",
+    "start": "nodejs ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hsiaoshen/Sustar.git"
-  },
-  "keywords": ["Sustar"],
-  "author": "兰丰浩,余宏图,申永哲,孙权,刘霜,吴东朔",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hsiaoshen/Sustar/issues"
-  },
-  "homepage": "https://github.com/hsiaoshen/Sustar#readme"
+  "dependencies": {
+    "express": "~4.0.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5"
+  }
 }
