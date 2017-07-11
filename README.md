@@ -24,13 +24,13 @@ id     |    id   | object|  是 　　|系统自动填写|　　 |  
 我的回答 |myanswer|String| 　　　　　|         |
 我的提问 |myquestion|String|       |         |
 我的评论 |mycomment|String |        |        |
-我关注的问题|issuesq|array|          |[]      |数组中存放问题的id
-关注的标签
-关注我的人与人数
-我关注的人与人数
-声望
-活跃度
-主页浏览次数
+我关注的问题|issuesq|Array|          |[　]     |数组中存放问题的id
+关注的标签|issuestag|Array|          |[ ]     |数组中存放标签的id
+关注我的人与人数|focusmeperson|Array|   |[ ]     |数组中存放关注我的人的id
+我关注的人与人数|myfocusperson|Array|    |[ ]     |数组中存放我关注的人的id
+声望|prestige| Number      |      |    0    |问题与回答被赞或者采纳加声望
+活跃度|liveness|Number    |       |     0   |每次登录与提问与回答问题加活跃度
+主页浏次数
 注册时间
 最近登录时间
 出生日期
