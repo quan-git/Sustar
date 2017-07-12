@@ -120,6 +120,9 @@
         .text-result {
             width: 760px;
         }
+        .text-right{
+          display: none;
+        }
     }
 
     @media screen and (max-width: 768px) {
@@ -135,6 +138,9 @@
         .text,
         .text-result {
             width: 100%;
+        }
+        .text-right{
+          display: none;
         }
     }
 
