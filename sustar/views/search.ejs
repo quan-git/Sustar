@@ -11,87 +11,54 @@
 </head>
 
 <body>
-    <div class="search-kuang">
-        <div class="search-input"><input type="text" class="search-input form-control" placeholder="Text input"></div>
-        <div class="search-button"><button type="button" class="button-color btn btn-primary btn-lg btn-block">搜索</button></div>
-    </div>
+    <form class="search-kuang" action="/search">
+        <div class="search-input"><input type="text" class="search-input form-control" placeholder="Text input" name="searchtext"></div>
+        <div class="search-button"><button type="submit" class="button-color btn btn-primary btn-lg btn-block">搜索</button></div>
+    </form>
     <div class="hr">
         <hr>
     </div>
     <div class="text-box">
-        <div class="text">
-            <div class="text-result">
-                <div class="text-result-title">
-                    <a href="#">所撒旦萨达是发生地方干撒的干撒的</a></div>
-                <div class="text-result-content">asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                    asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦</div>
+            <div class="text">
+              <div class="text-min">
+                <% result.forEach(function(result){ %>
+                    <div class="text-result">
+                        <div class="text-result-title">
+                            <a href="#">
+                                <%= result.title %>
+                            </a>
+                        </div>
+                        <div class="text-result-content">
+                            <%= result.questioncontent %>
+                        </div>
+                    </div>
+                    <% }); %>
             </div>
-            <div class="text-result">
-                <div class="text-result-title">
-                    <a href="#">旦萨达是发生地方干撒的干撒的干撒的噶啥地方为切尔夫人五色风ＧＶ收到打工asf</a></div>
-                <div class="text-result-content">asdasdfasdfasdasadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                    asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                    asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                </div>
-            </div>
-            <div class="text-result">
-                <div class="text-result-title">
-                    <a href="#">萨达所撒旦萨达是发生地方干撒的干撒的干撒的工asf</a></div>
-                <div class="text-result-content">asdasdfasdfasdasadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                    asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                    asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                </div>
-            </div>
-            <div class="text-result">
-                <div class="text-result-title">
-                    <a href="#">撒旦萨达所撒旦萨达是发生地方干</a></div>
-                <div class="text-result-content">asdasdfasdfasdasadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                    asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                    asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                </div>
-            </div>
-            <div class="text-result">
-                <div class="text-result-title">
-                    <a href="#">多撒旦萨达所撒旦萨干撒的司打工asf</a></div>
-                <div class="text-result-content">asdasdfasdfasdasadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                    asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                    asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                </div>
-            </div>
-            <div class="text-result">
-                <div class="text-result-title">
-                    <a href="#">萨达所撒旦萨达是发生地方干撒的干撒的干撒的噶啥地方为切尔夫</a></div>
-                <div class="text-result-content">asdasdfasdfasdasadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                    asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦 asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                    asdadssdzgfsdgs山东分公司的飞洒地方是大哥好地方给娃儿额我去热沃尔夫玩儿撒旦
-                </div>
-            </div>
-            <nav aria-label="Page navigation">
-                <ul class="nav-page pagination">
-                    <li>
-                        <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li>
-                        <a href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav aria-label="Page navigation">
+            <ul class="nav-page pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+      </div>
         <div class="text-right">
-          <div class="gaoxiao">JavaScript从入门到放弃，你值得经历！</div>
-          <% include ranking.ejs %>
+            <div class="gaoxiao">JavaScript从入门到放弃，你值得经历！</div>
+            <% include ranking.ejs %>
         </div>
     </div>
-
 </body>
 
 </html>
