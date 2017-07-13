@@ -149,11 +149,15 @@
         overflow: hidden;
         padding: 8px;
         margin-bottom: 10px;
+        text-overflow: ellipsis;
     }
 
     .text-result-title {
         font-size: 22px;
         color: #4e72b8;
+    }
+    .text-result-content{
+      font-size: 11px;
     }
 
     .nav-page {
@@ -161,4 +165,7 @@
         justify-content: center;
         display: flex;
         margin-top: 50px;
+    }
+    .text-min{
+      min-height: 450px;
     }
