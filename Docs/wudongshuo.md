@@ -24,34 +24,34 @@ day2:
  * 问题: jquery 添加的元素 无法获取, 实现的标签添加删除 行内携带 data 数据
    ```js
    // 定义两个变量, 一个控制次数, 另一个记录索引
-   var b = 0;
-			var index = 0;
-			$('.tag-a').click(function(){
-			if (b < 5) {
-			  b++;
-			  var a = $(this).text();
-     // 索引值为选中元素父元素的索引, 索引范围为父元素内
-				 index = $(this).parent('.mb5').index();
-					// 这里是添加到页面中的标签
-     $('#tags').append("<span class='tag-span center'>" + a + "<i class='remove'> × </i></span>");
-     // 将其父元素 类mb5 进行隐藏
-     $(this).parent('.mb5').fadeOut();
-					// 这里为最近一次 也就是最后一个标签添加数据 注意: 这里的数据在页面中不显示, 但是可以获取到
-			  $('.tag-span').last().data('value', index);
-				});
-    
-    // 对添加的元素操作
-    // 添加到页面的元素 使用 $(document).on(event, dom, function) 来添加事件
-    $(document).on('click', '.remove', function() {
-    // 控制个数, 每次 减一
-						b--;
-      // 将上面保存到每次添加到页面的元素中 data 的索引值 取出来
-						index = $(this).parent('.tag-span').data('value');
-      // 对这个元素操作
-						$(this).parent('.tag-span').remove();
-      // 将取出来的那个索引位值元素显示
-						$('.mb5').eq(index).fadeIn();
-					});
-     
-     // 问题: 在此项目中 index 并没有解决多栏中元素的索引...
+              var b = 0;
+              var index = 0;
+              $('.tag-a').click(function() {
+                  if (b < 5) {
+                    b++;
+                    var a = $(this).text();
+                    // 索引值为选中元素父元素的索引, 索引范围为父元素内
+                    index = $(this).parent('.mb5').index();
+                    // 这里是添加到页面中的标签
+                    $('#tags').append("<span class='tag-span center'>" + a + "<i class='remove'> × </i></span>");
+                    // 将其父元素 类mb5 进行隐藏
+                    $(this).parent('.mb5').fadeOut();
+                    // 这里为最近一次 也就是最后一个标签添加数据 注意: 这里的数据在页面中不显示, 但是可以获取到
+                    $('.tag-span').last().data('value', index);
+                  });
+
+                // 对添加的元素操作
+                // 添加到页面的元素 使用 $(document).on(event, dom, function) 来添加事件
+                $(document).on('click', '.remove', function() {
+                  // 控制个数, 每次 减一
+                  b--;
+                  // 将上面保存到每次添加到页面的元素中 data 的索引值 取出来
+                  index = $(this).parent('.tag-span').data('value');
+                  // 对这个元素操作
+                  $(this).parent('.tag-span').remove();
+                  // 将取出来的那个索引位值元素显示
+                  $('.mb5').eq(index).fadeIn();
+                });
+
+                // 问题: 在此项目中 index 并没有解决多栏中元素的索引...
    ```
