@@ -30,9 +30,9 @@
 
 ### 任务进度
 
-1. 完成任务：
+完成任务：
 
-    1. 创建了相对应的数据库模型，该数据库的模型如下
+1. 创建了相对应的数据库模型，该数据库的模型如下
 ```
     let Schema = mongoose.Schema;
  
@@ -45,7 +45,7 @@ let tagsShema = Schema({
  
 module.exports.tags = mongoose.model('tags', tagsShema);  //创建tags集合的模型并共享
 ```
-     2. 实现了当鼠标放到标签上显示工具提示框，内包含了关注人数，标签介绍，代码如下：
+ 2. 实现了当鼠标放到标签上显示工具提示框，内包含了关注人数，标签介绍，代码如下：
  ```ejs
  <div id="tishi1" style='display: none;' class='chuank'>
   <div id="sanjiao"></div>
@@ -147,7 +147,7 @@ module.exports.tags = mongoose.model('tags', tagsShema);  //创建tags集合的�
   bottom:-21px
 }
  ```
-2. 下一步事项:
+下一步事项:
   1. 登陆后显示搜索加关注框
   2. 登陆后加关注才有效，加的关注会在将标签存储到对应用户的标签数组中
   3. 时刻更新关注人数，当你点击加关注按钮，该显示的人数加1，数据内关注人数也加1,按钮显示已关注；再次点击变成加关注，人数减1
