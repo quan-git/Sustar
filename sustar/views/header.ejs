@@ -5,426 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <title>Document</title>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="/css/header.css">
+  <title>header</title>
   <style>
-    body {
-      font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
-      font-size: 14px;
-      line-height: 1.5;
-      color: #333;
-      background-color: #fff;
-    }
 
-    .container {
-      padding: 0;
-    }
-
-    .navbar {
-      min-height: 60px;
-      /*line-height: 60px;*/
-      margin-bottom: 0;
-    }
-
-    .navbar-default {
-      background-color: transparent;
-      border-color: transparent;
-    }
-
-    .nav-logo {
-      float: left;
-      display: block;
-      width: 188px;
-      height: 60px;
-      margin-left: 10px;
-      /*background: url(../public/images/sustar-logo.png);*/
-    }
-
-    .nav>li {
-      display: inline-block;
-    }
-
-    .nav>li>a {
-      /*padding: 0;*/
-      display: inline-block;
-      padding: 0 13px;
-      height: 30px;
-      color: #4e72b8 !important;
-      line-height: 30px;
-      background: transparent;
-      font-size: 16px;
-      border-radius: 3px;
-    }
-
-    .collapse>.nav>li>a:hover {
-      background-color: #e7e7e7;
-    }
-
-    .navbar-nav {
-      line-height: 60px;
-      display: inline-block;
-    }
-    /*.active {
-      line-height: 30px;
-    }*/
-
-    .new-show:after {
-      content: '';
-      display: block;
-      width: 6px;
-      height: 6px;
-      background-color: #ff4500;
-      position: absolute;
-      right: 4px;
-      top: 4px;
-      border-radius: 50%;
-    }
-
-    .line-leight {
-      line-height: 58px;
-    }
-
-    .navbar-form {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    .form-group {
-      position: relative;
-    }
-
-    .btn {
-      position: absolute;
-      top: 14px;
-      left: 1px;
-      padding: 6px 9px;
-      color: #999;
-      border: none;
-      border-radius: 3px;
-    }
-
-    .btn-default:hover {
-      color: #333;
-      background: #F6F6F6;
-      border-color: #adadad;
-    }
-
-    .form-control {
-      padding-left: 35px;
-      /*line-height: 60px;*/
-    }
-
-    .form-control:focus {
-      background: #F6F6F6;
-      box-shadow: none;
-    }
-
-    .navbar-right>.nav>li>.a-hover:hover {
-      background-color: #e7e7e7;
-    }
-
-    .log-in {
-      background-color: #009a61;
-      color: #fff;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-      /* ----------------------------------------- 神奇居中tag ------------------------------------ */
-      margin-left: 15px;
-      display: inline-block;
-      padding: 0 13px;
-      height: 30px;
-      line-height: 30px;
-      font-size: 16px;
-      border-radius: 3px;
-    }
-
-    .log-in>a {
-      color: #fff;
-    }
-
-
-    @media (max-width: 1199px) and (min-width: 992px) {
-      .form-group .header-search {
-        width: 80px;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      .form-group .header-search {
-        width: 234px;
-      }
-    }
-
-    .nav-tags {
-      background: #4e72b8;
-      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.24);
-    }
-
-    .nav_list {
-      overflow: hidden;
-      height: 34px;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-
-    .nav_item {
-      display: inline-block;
-    }
-
-    .nav_list .nav_item a {
-      display: block;
-      padding: 9px;
-      color: #eee;
-      line-height: 1;
-    }
-
-    .nav_list .nav_item a:hover {
-      background-color: rgba(255, 255, 255, 0.15);
-      text-decoration: none;
-    }
-
-    .nav_list .nav_item a span {
-      margin-right: 5px;
-    }
-
-    .split {
-      width: 0;
-    }
-
-    .split::after {
-      content: '';
-      height: 16px;
-      border-right: 1px solid rgba(157, 204, 182, 0.25);
-    }
-
-    .nav_list .nav_item .nav_tag {
-      padding: 10px;
-    }
-
-    .nav_item-more {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 34px;
-      width: 34px;
-      background: #4e72b8;
-    }
-
-    .nav-posi {
-      position: relative;
-    }
-
-    .nav_item-more::after {
-      content: '';
-      position: absolute;
-      left: -20px;
-      top: 0;
-      width: 20px;
-      height: 100%;
-      /*background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…B3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=);*/
-      background-size: 100%;
-      /*background-image: -moz-linear-gradient(0deg, rgba(0, 95, 60, 0) 0%, #005f3c 100%);*/
-      /*background-image: -webkit-linear-gradient(0deg, rgba(0, 95, 60, 0) 0%, #005f3c 100%);*/
-      background-image: linear-gradient(90deg, rgba(0, 95, 60, 0) 0%, #4e72b8 100%);
-    }
-
-    .tag__more {
-      width: 22px;
-      padding: 7px 0;
-    }
-
-    .tag__more--icon {
-      display: inline-block;
-      width: 4px;
-      height: 4px;
-      background-color: #eee;
-      border-radius: 50%;
-      float: left;
-      margin-right: 3px;
-    }
-
-    .nav_list .nav_item .tag_item_more:hover {
-      background: transparent;
-    }
-
-    .navbar-right .login_out {
-      display: none;
-    }
-
-    .glyphicon-pencil {}
-
-
-    .navbar-nav>li>.dropdown-menu {
-      margin-top: 0;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-    }
-
-    .btn-group {
-      display: block;
-    }
-
-    .btn-primary {
-      background: #4e72b8;
-      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.24);
-      color: #eee;
-    }
-
-    .btn-primary:hover {
-      background-color: #33a3dc;
-    }
-
-    .btn-primary:active {
-      background-color: #e7e7e7;
-    }
-
-    .btn-primary:focus {
-      background-color: #e7e7e7;
-    }
-
-    .btn-group .btn {
-      padding: 6px 6px;
-    }
-
-    .login_pad {
-      padding: 0 5px;
-    }
-
-    @media (min-width: 768px) {
-      .navbar-right .dropdown-menu {
-        top: 52px;
-      }
-    }
-
-    .navbar-right>.nav>li>.login_a:hover {
-      background-color: #e7e7e7;
-    }
-
-    .login_a {
-      line-height: 30px;
-    }
-
-    #bell {
-      width: 276px;
-      padding-top: 0;
-    }
-
-    .bell-top {
-      background-color: #f5f5f5;
-    }
-
-    .nav-tabs {
-      border-bottom: none;
-    }
-
-    .nav-tabs>li>a {
-      margin-right: 0px;
-    }
-
-    .nav-tabs>li {
-      line-height: 1;
-    }
-
-    .nav-tabs>li.active>a,
-    .nav-tabs>li.active>a:focus,
-    .nav-tabs>li.active>a:hover {
-      background-color: #fff;
-      border: none;
-      border-radius: 0px;
-      background-color: transparent;
-      font-weight: bold;
-      color: #009A61;
-      box-shadow: inset 0px -2px 0px 0px #009A61;
-    }
-
-    .nav-tabs>li>a:hover {
-      box-shadow: inset 0px -2px 0px 0px #009A61;
-      border-radius: 0px;
-      background-color: #fff;
-      border: none;
-      border-radius: 0px;
-    }
-
-    .tab-content {
-      height: 250px;
-    }
-
-    .text_tab {
-      line-height: 40px;
-      margin: 0 5px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .bell_tag {
-      position: relative;
-    }
-
-    .tab-content .text_tab a,
-    .foot_tab a {
-      font-size: 13px;
-      color: #666;
-      line-height: 30px;
-    }
-
-    .tab-content .text_tab a:hover {
-      color: #ed502b;
-      text-decoration: none;
-    }
-
-    .foot_tab a {
-      position: absolute;
-      right: 10px;
-      bottom: 0px;
-    }
-
-    .foot_tab {
-      height: 30px;
-      background-color: #f5f5f5;
-      bottom: -5px;
-      position: absolute;
-      border-radius: 4px;
-      width: 100%;
-    }
-
-    .no-text {
-      line-height: 30px;
-      text-align: center;
-      margin: 0;
-    }
-
-    .navbar-toggle {
-      float: left;
-      margin-top: 13px;
-      margin-left: 15px;
-      margin-bottom: 13px;
-    }
-
-
-    .denglu a {
-      display: block;
-      line-height: 60px;
-      color: #4e72b8;
-      font-size: 25px;
-      padding-right: 15px;
-    }
-
-    .denglu>a:hover {
-      color: #33a3dc;
-    }
-
-    .denglu .login_out {
-      display: none;
-    }
-
-    @media (max-width: 767px) {
-      .visible-xs {
-        display: inline-block!important;
-      }
-    }
   </style>
 </head>
 
@@ -440,30 +27,30 @@
         <span class="icon-bar"></span>
       </button>
         <div class="denglu">
-          <a href="" class="visible-xs-block pull-right">
+          <a class="visible-xs-block pull-right">
             <!--                                            未登录显示的图标   用 login_out 隐藏         -->
-            <span class="glyphicon glyphicon-log-in login_out"></span>
+            <span class="login-button login-hidden glyphicon glyphicon-log-in"></span>
             <!--                                            已登录显示的图标         -->
-            <span class="glyphicon glyphicon-pencil"></span>
+            <span class="login-block glyphicon glyphicon-pencil login_out"></span>
           </a>
         </div>
-        <a href="#" class="nav-logo"><img src="../public/images/sustar-logo.png" alt="" height=90%/></a>
+        <a href="#" class="nav-logo"><img src="./images/sustar-logo.png" alt="" height=90%/></a>
       </div>
 
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-
+<!--
           <li><a class="new-show" href="#">头条</a></li>
           <li><a class="new-show" href="#">问答</a></li>
           <li><a href="#">专栏</a></li>
           <li><a href="#">讲堂</a></li>
           <li><a href="#">职位</a></li>
-          <li><a class="new-show" href="#">活动</a></li>
+          <li><a class="new-show" href="#">活动</a></li> -->
           <!--                                                  登录后显示部分                                             -->
-          <li class='visible-xs'><a href="#">消息</a></li>
-          <li class='visible-xs'><a href="#">设置</a></li>
-          <li class='visible-xs'><a href="#">退出</a></li>
+          <li class='visible-xs login-block'><a href="#">消息</a></li>
+          <li class='visible-xs login-block'><a href="#">设置</a></li>
+          <li class='visible-xs login-block'><a href="#">退出</a></li>
 
         </ul>
 
@@ -472,25 +59,28 @@
           <form class="line-leight navbar-form navbar-left hidden-sm hidden-xs">
             <div class="form-group">
               <input type="text" class="header-search form-control" placeholder="输入关键词以搜索">
-              <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+              <button type="submit" class="btn btn-default btn-p"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
             </div>
           </form>
           <ul class="nav navbar-nav navbar-right hidden-xs">
             <!--                                                 未登录的小手  已用login_out隐藏 -->
-            <li class='login_out'>
-              <a class="a-hover" href="#">
+            <!-- login_out -->
+            <li class='login-hidden'>
+              <a class="a-hover">
                 <span class="glyphicon glyphicon-question-sign"></span>
               </a>
             </li>
             <!--                                                 未登录的登录注册绿框   已用login_out 隐藏 -->
-            <li class='login_out'>
+            <!-- login_out -->
+            <li class='login-button login-hidden'>
               <div class='log-in'>
-                <a href="">登录</a>
+                <a>登录</a>
                 <span>·</span>
-                <a href="">注册</a>
+                <a>注册</a>
               </div>
             </li>
-            <li class="dropdown login_pad hidden-sm hidden-xs">
+            <!-- 写帖子（登陆后） -->
+            <li class="login-block dropdown login_pad hidden-sm hidden-xs login_out">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-pencil"></span>
                 <span class="caret"></span>
@@ -504,8 +94,8 @@
                 <li><a href="#">草稿箱</a></li>
               </ul>
             </li>
-
-            <li class="dropdown login_pad hidden-sm hidden-xs" id='bell-f'>
+            <!-- 消息（登陆后） -->
+            <li class="login-block dropdown login_pad hidden-sm hidden-xs login_out" id='bell-f'>
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-bell"></span>
               </a>
@@ -549,8 +139,8 @@
                 </li>
               </ul>
             </li>
-
-            <li class="dropdown login_pad hidden-sm hidden-xs">
+            <!-- 信息(登录后) -->
+            <li class="login-block dropdown login_pad hidden-sm hidden-xs login_out">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-envelope"></span>
               </a>
@@ -577,13 +167,13 @@
                 </li>
               </ul>
             </li>
-
-            <li class='login_pad'>
+            <!-- 个人信息(登陆后) -->
+            <li class='login-block login_pad login_out'>
               <div class="btn-group">
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn  btn-p btn-primary">
                   <span class="glyphicon glyphicon-user"></span>
                 </button>
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button type="button" class="btn btn-p btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="caret"></span>
     <span class="sr-only">Toggle Dropdown</span>
   </button>
@@ -592,7 +182,7 @@
                   <li><a href="#">我的文档</a></li>
                   <li><a href="#">我的资产</a></li>
                   <li><a href="#">帐号设置</a></li>
-                  <li><a href="#">退出</a></li>
+                  <li><a href="/quit">退出</a></li>
                   <li role="separator" class="divider"></li>
                   <li><a href="#">返回主页</a></li>
                   <li><a href="#">建议反馈</a></li>
@@ -636,16 +226,28 @@
       </nav>
     </div>
   </div>
+  <div class="login-box"><% include login %></div>
   <script>
     var bell = document.getElementById('bell');
     var bellF = document.getElementById('bell-f');
-    console.log(bell);
+    var state = <%= state %>;
+    if (state) {
+      $(".login-hidden").addClass("login_out");
+      $(".login-block").removeClass("login_out");
+    }else {
+      $(".login-block").addClass("login_out");
+      $(".login-hidden").removeClass("login_out");
+    }
     bell.onmouseover = function() {
       bell.style.display = "block";
     }
     bell.onmouseout = function() {
       bell.style.display = null;
     }
+    $(".login-button").click(function(){
+      $(".login-box").css("display","block");
+      console.log("show");
+    });
   </script>
 </body>
 
